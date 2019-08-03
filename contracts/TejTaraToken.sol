@@ -10,6 +10,8 @@ contract TejTaraToken {
   uint256 public totalSupply;
   mapping(address=>uint256) public balanceOf;
 
+  event transferEvent(address indexed from,address indexed to,uint256 value);
+   
 
   constructor(uint256 initialSupply) public {
         balanceOf[msg.sender]=initialSupply;
@@ -20,6 +22,8 @@ contract TejTaraToken {
        require(balanceOf[msg.sender]>=value);
        balanceOf[msg.sender] -= value;
        balanceOf[to] += value;
+   
+     emit transferEvent(msg.sender,to,value);
 
    }
 

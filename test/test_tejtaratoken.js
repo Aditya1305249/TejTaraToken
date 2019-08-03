@@ -42,6 +42,12 @@ contract("TejTaraToken",(accounts)=>{
            assert(error.message.indexOf('revert')>=0,"revert haas to be fired");
           return tokenInstance.transfer(accounts[1],500000)
        }).then(receipt=>{
+           //console.log(receipt);
+           assert.equal(receipt.logs.length,1,"triggerd one event");
+           assert.equal(receipt.logs[0].event,"transferEvent","should be the 'tranferEvent' event");
+           assert.equal(receipt.logs[0].args.from,accounts[0],"logs the account the tokens transfer from");
+           assert.equal(receipt.logs[0].args.to,accounts[1],"logs the accounts the tokens trnsfer to");
+           assert.equal(receipt.logs[0].args.value,500000,"logs the tranfer amount");
            return tokenInstance.balanceOf(accounts[0])
        }).then(balance=>{
            assert.equal(balance,500000,"Balance of admin");
