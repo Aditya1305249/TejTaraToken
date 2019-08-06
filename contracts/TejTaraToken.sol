@@ -41,10 +41,14 @@ contract TejTaraToken {
 
   function transferFrom(address from,address to,uint256 value) public returns(bool sucess){
 
+     require(balanceOf[from]>=value);
+     require(allowance[from][msg.sender]>=value);
+
+
     balanceOf[from] -=value;
     balanceOf[to] +=value;
 
-    allowance[msg.sender][from] -=value;
+    allowance[from][msg.sender] -=value;
 
      emit Transfer(from,to,value);
     return true;

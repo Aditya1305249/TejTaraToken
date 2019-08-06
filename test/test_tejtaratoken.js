@@ -86,24 +86,43 @@ contract("TejTaraToken",(accounts)=>{
   it('handels deligates token transfer',()=>{
         return TejTaraToken.deployed().then(instance=>{
             tokenInstance=instance;
-         return tokenInstance.transferFrom.call(accounts[1],accounts[2],10);   
-        }).then(sucess=>{
-            assert.equal(sucess,true,'deligate transaction happened');
-            return tokenInstance.transferFrom(accounts[1],accounts[2],10)
+           fromAccount = accounts[2];
+           toAccount = accounts[3];
+           spendingAccount = accounts[4];
+           //transfer some token to fromAccount
+           return tokenInstance.transfer(fromAccount,100,{from:accounts[0]})
         }).then(receipt=>{
-            assert.equal(receipt.logs.length,1,'only one Transfer Event triggerd');
-            assert.equal(receipt.logs[0].event,"Transfer","should be the 'Approval' event");
-            assert.equal(receipt.logs[0].args.from,accounts[1],"logs the account the tokens transfer from");
-            assert.equal(receipt.logs[0].args.to,accounts[2],"logs the accounts the tokens trnsfer to");
-            assert.equal(receipt.logs[0].args.value,10,"logs the tranfer amount");
-            return tokenInstance.allowance(accounts[0],accounts[1])
-        }).then(allowanceRemain=>{
-            assert.equal(allowanceRemain,90,'allowance remain to spend');
-            return tokenInstance.balanceOf(accounts[2])
+         // appprove spending account to spend 50 token from fromAccount
+
+         return tokenInstance.approval(spendingAccount,50,{from:fromAccount})
+        }).then(receipt=>{
+            //trying to transfer larger thean value
+          return tokenInstance.transferFrom(fromAccount,toAccount,9999,{from:spendingAccount})
+        }).then(assert.fail).catch(error=>{
+            assert(error.message.indexOf('revert')>=0,'cant transfer value larger then account' )
+            return tokenInstance.transferFrom(fromAccount,toAccount,60,{from:spendingAccount})
+        }).then(assert.fail).catch(error=>{
+            assert(error.message.indexOf('revert')>=0,'cant transfer value larger then approve amount' )
+            return tokenInstance.transferFrom.call(fromAccount,toAccount,50,{from:spendingAccount})
+        }).then(sucess=>{
+            assert.equal(sucess,true);
+            return tokenInstance.transferFrom(fromAccount,toAccount,50,{from:spendingAccount})
+        }).then(receipt=>{
+            assert.equal(receipt.logs.length,1,"triggerd one event");
+           assert.equal(receipt.logs[0].event,"Transfer","should be the 'transfer' event");
+           assert.equal(receipt.logs[0].args.from,fromAccount,"logs the account the tokens transfer from");
+           assert.equal(receipt.logs[0].args.to,toAccount,"logs the accounts the tokens trnsfer to");
+           assert.equal(receipt.logs[0].args.value,50,"logs the tranfer amount");
+           return tokenInstance.balanceOf(fromAccount)
         }).then(balance=>{
-            assert.equal(balance,10,'money transfer of behafe og accounts[1]');
+            assert.equal(balance,50,'balance after transfer');
+            return tokenInstance.balanceOf(toAccount)
+        }).then(balance=>{
+            assert.equal(balance,50,'balance after transfer');
+            return tokenInstance.allowance(fromAccount,spendingAccount)
+        }).then(balance=>{
+            assert.equal(balance,0,'balance of allowance')
         })
-      
 
   })
 
