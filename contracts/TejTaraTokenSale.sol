@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 import './TejTaraToken.sol';
 contract  TejTaraTokenSale {
     
-    address admin;
+    address payable admin;
     TejTaraToken public tokenContract;
     uint256 public tokenPrice;
     uint256 public tokenSold;
@@ -32,5 +32,12 @@ contract  TejTaraTokenSale {
        emit Sell(msg.sender,numberOfTokens);
 
     }
+
+    function endSale()  public {
+        require(msg.sender==admin);
+        require(tokenContract.transfer(admin,tokenContract.balanceOf(address(this))));
+      //   admin.transfer(address(this).balance);
+    }
+
 
 } 

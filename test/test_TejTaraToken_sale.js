@@ -10,6 +10,7 @@ contract('TejTaraTokenSale',accounts=>{
   const buyer=accounts[1];
   const tokensAvailable = 750000;
   const numberOfTokens=10;
+
     it('intiazling the contract with the correct value', ()=>{    
         return TejTaraTokenSale.deployed().then(instance=>{
             tokenSaleInstance=instance;
@@ -64,6 +65,32 @@ contract('TejTaraTokenSale',accounts=>{
   
      })
     })
+
+
+    it('end token sale',()=>{
+
+       return TejTaraToken.deployed().then(instance=>{
+           tokenInstance=instance;
+          
+         return TejTaraTokenSale.deployed()  
+       }).then(instance=>{
+           tokenSaleInstance=instance;
+
+          return tokenSaleInstance.endSale({from:buyer}) 
+       }).then(assert.fail).catch(error=>{
+           assert(error.message.indexOf('revert')>=0,'end sale other than admin')
+           return tokenSaleInstance.endSale({from:admin})
+       }).then(receipt=>{
+           return tokenInstance.balanceOf(admin)
+       }).then(balance=>{
+           assert.equal(balance.toNumber(),999990,'remaining balance')
+            return tokenInstance.balanceOf(tokenSaleInstance.address)
+       }).then(balance=>{
+           assert.equal(balance,0,'balance of contractToken Sale')
+       })    
+
+    })
+
 
 
 })
