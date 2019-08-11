@@ -99,21 +99,21 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"endSale\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenSold\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenPrice\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_address\",\"type\":\"address\"},{\"name\":\"_tokenPrice\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Sell\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraTokenSale.sol\":\"TejTaraTokenSale\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraToken.sol\":{\"keccak256\":\"0xb9355935e4e0493ae3d40f1f44589a2d4d7617a25265c95651ca8014da321913\",\"urls\":[\"bzzr://da10c9cfb0d205653cdb900a0261581ecd3cabd7ee3ea46bdc15f3ee4299acf6\"]},\"/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraTokenSale.sol\":{\"keccak256\":\"0x0a3e3c4d7f123fb7bf87cfa456bf2025526bc2ccb2115fea3dc8e2629013a68b\",\"urls\":[\"bzzr://bd27490e15c6f91fff7b23a5a8cc27244a10e05fb85e8a8134fb40d47bc9ae25\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516040806107918339810180604052604081101561003057600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508060028190555050506106ad806100e46000396000f3fe60806040526004361061004a5760003560e01c80633610724e1461004f578063380d831b1461007d578063519ee19e1461009457806355a373d6146100bf5780637ff9b59614610116575b600080fd5b61007b6004803603602081101561006557600080fd5b8101908080359060200190929190505050610141565b005b34801561008957600080fd5b506100926103a9565b005b3480156100a057600080fd5b506100a9610623565b6040518082815260200191505060405180910390f35b3480156100cb57600080fd5b506100d4610629565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012257600080fd5b5061012b61064f565b6040518082815260200191505060405180910390f35b61014d81600254610655565b341461015857600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101f857600080fd5b505afa15801561020c573d6000803e3d6000fd5b505050506040513d602081101561022257600080fd5b8101908080519060200190929190505050101561023e57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102e757600080fd5b505af11580156102fb573d6000803e3d6000fd5b505050506040513d602081101561031157600080fd5b810190808051906020019092919050505061032b57600080fd5b806003600082825401925050819055507f5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df093382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461040257600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561050157600080fd5b505afa158015610515573d6000803e3d6000fd5b505050506040513d602081101561052b57600080fd5b81019080805190602001909291905050506040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156105a557600080fd5b505af11580156105b9573d6000803e3d6000fd5b505050506040513d60208110156105cf57600080fd5b81019080805190602001909291905050506105e957600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b600080821480610672575082828385029250828161066f57fe5b04145b61067b57600080fd5b9291505056fea165627a7a72305820d8c4b8ea7136459fec4a42d7a6f4fcfb5cb810772b07d1fcd4d80fcac34303cb0029",
-  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80633610724e1461004f578063380d831b1461007d578063519ee19e1461009457806355a373d6146100bf5780637ff9b59614610116575b600080fd5b61007b6004803603602081101561006557600080fd5b8101908080359060200190929190505050610141565b005b34801561008957600080fd5b506100926103a9565b005b3480156100a057600080fd5b506100a9610623565b6040518082815260200191505060405180910390f35b3480156100cb57600080fd5b506100d4610629565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012257600080fd5b5061012b61064f565b6040518082815260200191505060405180910390f35b61014d81600254610655565b341461015857600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101f857600080fd5b505afa15801561020c573d6000803e3d6000fd5b505050506040513d602081101561022257600080fd5b8101908080519060200190929190505050101561023e57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102e757600080fd5b505af11580156102fb573d6000803e3d6000fd5b505050506040513d602081101561031157600080fd5b810190808051906020019092919050505061032b57600080fd5b806003600082825401925050819055507f5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df093382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461040257600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561050157600080fd5b505afa158015610515573d6000803e3d6000fd5b505050506040513d602081101561052b57600080fd5b81019080805190602001909291905050506040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156105a557600080fd5b505af11580156105b9573d6000803e3d6000fd5b505050506040513d60208110156105cf57600080fd5b81019080805190602001909291905050506105e957600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b600080821480610672575082828385029250828161066f57fe5b04145b61067b57600080fd5b9291505056fea165627a7a72305820d8c4b8ea7136459fec4a42d7a6f4fcfb5cb810772b07d1fcd4d80fcac34303cb0029",
-  "sourceMap": "54:1061:2:-;;;268:163;8:9:-1;5:2;;;30:1;27;20:12;5:2;268:163:2;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;268:163:2;;;;;;;;;;;;;;;;;;;;;;;;;347:10;341:5;;:16;;;;;;;;;;;;;;;;;;382:8;367:13;;:23;;;;;;;;;;;;;;;;;;413:11;400:10;:24;;;;268:163;;54:1061;;;;;;",
-  "deployedSourceMap": "54:1061:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;565:353;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;565:353:2;;;;;;;;;;;;;;;;;:::i;:::-;;924:187;;8:9:-1;5:2;;;30:1;27;20:12;5:2;924:187:2;;;:::i;:::-;;189:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;189:24:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;119:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;119:33:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;158:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;158:25:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;565:353;652:35;661:14;676:10;;652:8;:35::i;:::-;639:9;:48;631:57;;;;;;745:14;705:13;;;;;;;;;;;:23;;;737:4;705:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;705:38:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;705:38:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;705:38:2;;;;;;;;;;;;;;;;:54;;697:63;;;;;;777:13;;;;;;;;;;;:22;;;800:10;811:14;777:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;777:49:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;777:49:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;777:49:2;;;;;;;;;;;;;;;;769:58;;;;;;850:14;837:9;;:27;;;;;;;;;;;879:31;884:10;895:14;879:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;565:353;:::o;924:187::-;981:5;;;;;;;;;;;969:17;;:10;:17;;;961:26;;;;;;1005:13;;;;;;;;;;;:22;;;1028:5;;;;;;;;;;;1034:13;;;;;;;;;;;:23;;;1066:4;1034:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1034:38:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1034:38:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1034:38:2;;;;;;;;;;;;;;;;1005:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1005:68:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1005:68:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1005:68:2;;;;;;;;;;;;;;;;997:77;;;;;;1098:5;;;;;;;;;;;1085:19;;;189:24;;;;:::o;119:33::-;;;;;;;;;;;;;:::o;158:25::-;;;;:::o;437:119::-;498:9;530:1;527;:4;:21;;;;547:1;544;541;539;:3;536:6;;;535:10;;;;;;:13;527:21;519:30;;;;;;437:119;;;;:::o",
-  "source": "pragma solidity ^0.5.0;\n\nimport './TejTaraToken.sol';\ncontract  TejTaraTokenSale {\n    \n    address payable admin;\n    TejTaraToken public tokenContract;\n    uint256 public tokenPrice;\n    uint256 public tokenSold;\n\n\n    event Sell(address buyer,uint256 amount);\n\n    constructor( TejTaraToken _address,uint256 _tokenPrice) public {\n        admin=msg.sender;\n        tokenContract= _address;\n        tokenPrice = _tokenPrice;\n    }\n\n    function multiply(uint256 x,uint256 y) internal pure returns(uint256 z) {\n        require(y==0 || (z= x*y)/y==x);\n    }\n  \n\n    function buyTokens(uint256 numberOfTokens)public payable {\n       require(msg.value == multiply(numberOfTokens,tokenPrice));\n       require(tokenContract.balanceOf(address(this))>=numberOfTokens);\n       require(tokenContract.transfer(msg.sender,numberOfTokens));\n\n       tokenSold += numberOfTokens;\n\n       emit Sell(msg.sender,numberOfTokens);\n\n    }\n\n    function endSale()  public {\n        require(msg.sender==admin);\n        require(tokenContract.transfer(admin,tokenContract.balanceOf(address(this))));\n         selfdestruct(admin);\n    }\n\n\n} ",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"buyTokens\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"endSale\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenSold\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenPrice\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"name\":\"_address\",\"type\":\"address\"},{\"name\":\"_tokenPrice\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"buyer\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"Sell\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraTokenSale.sol\":\"TejTaraTokenSale\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraToken.sol\":{\"keccak256\":\"0xb9355935e4e0493ae3d40f1f44589a2d4d7617a25265c95651ca8014da321913\",\"urls\":[\"bzzr://da10c9cfb0d205653cdb900a0261581ecd3cabd7ee3ea46bdc15f3ee4299acf6\"]},\"/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraTokenSale.sol\":{\"keccak256\":\"0x76e25081fcf8d0ea3c0bedefdb1129eee03d4d1cda86daa2982b0f70064868a0\",\"urls\":[\"bzzr://b12c986f2bb50102466d30818f6438c33975e37b23584a3f5b098a724805b97a\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516040806107598339810180604052604081101561003057600080fd5b810190808051906020019092919080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806002819055505050610675806100e46000396000f3fe60806040526004361061004a5760003560e01c80633610724e1461004f578063380d831b1461007d578063519ee19e1461009457806355a373d6146100bf5780637ff9b59614610116575b600080fd5b61007b6004803603602081101561006557600080fd5b8101908080359060200190929190505050610141565b005b34801561008957600080fd5b506100926103a9565b005b3480156100a057600080fd5b506100a96105eb565b6040518082815260200191505060405180910390f35b3480156100cb57600080fd5b506100d46105f1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012257600080fd5b5061012b610617565b6040518082815260200191505060405180910390f35b61014d8160025461061d565b341461015857600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101f857600080fd5b505afa15801561020c573d6000803e3d6000fd5b505050506040513d602081101561022257600080fd5b8101908080519060200190929190505050101561023e57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102e757600080fd5b505af11580156102fb573d6000803e3d6000fd5b505050506040513d602081101561031157600080fd5b810190808051906020019092919050505061032b57600080fd5b806003600082825401925050819055507f5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df093382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461040257600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561050157600080fd5b505afa158015610515573d6000803e3d6000fd5b505050506040513d602081101561052b57600080fd5b81019080805190602001909291905050506040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156105a557600080fd5b505af11580156105b9573d6000803e3d6000fd5b505050506040513d60208110156105cf57600080fd5b81019080805190602001909291905050506105e957600080fd5b565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b60008082148061063a575082828385029250828161063757fe5b04145b61064357600080fd5b9291505056fea165627a7a72305820b4b2e4d99177296daf2237cc2abb24e2d941d6b41aa8ff51274cee7d2aa0febc0029",
+  "deployedBytecode": "0x60806040526004361061004a5760003560e01c80633610724e1461004f578063380d831b1461007d578063519ee19e1461009457806355a373d6146100bf5780637ff9b59614610116575b600080fd5b61007b6004803603602081101561006557600080fd5b8101908080359060200190929190505050610141565b005b34801561008957600080fd5b506100926103a9565b005b3480156100a057600080fd5b506100a96105eb565b6040518082815260200191505060405180910390f35b3480156100cb57600080fd5b506100d46105f1565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561012257600080fd5b5061012b610617565b6040518082815260200191505060405180910390f35b61014d8160025461061d565b341461015857600080fd5b80600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b1580156101f857600080fd5b505afa15801561020c573d6000803e3d6000fd5b505050506040513d602081101561022257600080fd5b8101908080519060200190929190505050101561023e57600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb33836040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156102e757600080fd5b505af11580156102fb573d6000803e3d6000fd5b505050506040513d602081101561031157600080fd5b810190808051906020019092919050505061032b57600080fd5b806003600082825401925050819055507f5e5e995ce3133561afceaa51a9a154d5db228cd7525d34df5185582c18d3df093382604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390a150565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461040257600080fd5b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663a9059cbb6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370a08231306040518263ffffffff1660e01b8152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060206040518083038186803b15801561050157600080fd5b505afa158015610515573d6000803e3d6000fd5b505050506040513d602081101561052b57600080fd5b81019080805190602001909291905050506040518363ffffffff1660e01b8152600401808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200182815260200192505050602060405180830381600087803b1580156105a557600080fd5b505af11580156105b9573d6000803e3d6000fd5b505050506040513d60208110156105cf57600080fd5b81019080805190602001909291905050506105e957600080fd5b565b60035481565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60025481565b60008082148061063a575082828385029250828161063757fe5b04145b61064357600080fd5b9291505056fea165627a7a72305820b4b2e4d99177296daf2237cc2abb24e2d941d6b41aa8ff51274cee7d2aa0febc0029",
+  "sourceMap": "54:1081:2:-;;;268:163;8:9:-1;5:2;;;30:1;27;20:12;5:2;268:163:2;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;268:163:2;;;;;;;;;;;;;;;;;;;;;;;;;347:10;341:5;;:16;;;;;;;;;;;;;;;;;;382:8;367:13;;:23;;;;;;;;;;;;;;;;;;413:11;400:10;:24;;;;268:163;;54:1081;;;;;;",
+  "deployedSourceMap": "54:1081:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;565:353;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;565:353:2;;;;;;;;;;;;;;;;;:::i;:::-;;924:207;;8:9:-1;5:2;;;30:1;27;20:12;5:2;924:207:2;;;:::i;:::-;;189:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;189:24:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;119:33;;8:9:-1;5:2;;;30:1;27;20:12;5:2;119:33:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;158:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;158:25:2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;565:353;652:35;661:14;676:10;;652:8;:35::i;:::-;639:9;:48;631:57;;;;;;745:14;705:13;;;;;;;;;;;:23;;;737:4;705:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;705:38:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;705:38:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;705:38:2;;;;;;;;;;;;;;;;:54;;697:63;;;;;;777:13;;;;;;;;;;;:22;;;800:10;811:14;777:49;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;777:49:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;777:49:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;777:49:2;;;;;;;;;;;;;;;;769:58;;;;;;850:14;837:9;;:27;;;;;;;;;;;879:31;884:10;895:14;879:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;565:353;:::o;924:207::-;981:5;;;;;;;;;;;969:17;;:10;:17;;;961:26;;;;;;1005:13;;;;;;;;;;;:22;;;1028:5;;;;;;;;;;;1034:13;;;;;;;;;;;:23;;;1066:4;1034:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1034:38:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1034:38:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1034:38:2;;;;;;;;;;;;;;;;1005:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1005:68:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1005:68:2;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1005:68:2;;;;;;;;;;;;;;;;997:77;;;;;;924:207::o;189:24::-;;;;:::o;119:33::-;;;;;;;;;;;;;:::o;158:25::-;;;;:::o;437:119::-;498:9;530:1;527;:4;:21;;;;547:1;544;541;539;:3;536:6;;;535:10;;;;;;:13;527:21;519:30;;;;;;437:119;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\nimport './TejTaraToken.sol';\ncontract  TejTaraTokenSale {\n    \n    address payable admin;\n    TejTaraToken public tokenContract;\n    uint256 public tokenPrice;\n    uint256 public tokenSold;\n\n\n    event Sell(address buyer,uint256 amount);\n\n    constructor( TejTaraToken _address,uint256 _tokenPrice) public {\n        admin=msg.sender;\n        tokenContract= _address;\n        tokenPrice = _tokenPrice;\n    }\n\n    function multiply(uint256 x,uint256 y) internal pure returns(uint256 z) {\n        require(y==0 || (z= x*y)/y==x);\n    }\n  \n\n    function buyTokens(uint256 numberOfTokens)public payable {\n       require(msg.value == multiply(numberOfTokens,tokenPrice));\n       require(tokenContract.balanceOf(address(this))>=numberOfTokens);\n       require(tokenContract.transfer(msg.sender,numberOfTokens));\n\n       tokenSold += numberOfTokens;\n\n       emit Sell(msg.sender,numberOfTokens);\n\n    }\n\n    function endSale()  public {\n        require(msg.sender==admin);\n        require(tokenContract.transfer(admin,tokenContract.balanceOf(address(this))));\n      //   admin.transfer(address(this).balance);\n    }\n\n\n} ",
   "sourcePath": "/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraTokenSale.sol",
   "ast": {
     "absolutePath": "/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraTokenSale.sol",
     "exportedSymbols": {
       "TejTaraTokenSale": [
-        382
+        378
       ]
     },
-    "id": 383,
+    "id": 379,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -132,7 +132,7 @@
         "file": "./TejTaraToken.sol",
         "id": 245,
         "nodeType": "ImportDirective",
-        "scope": 383,
+        "scope": 379,
         "sourceUnit": 243,
         "src": "25:28:2",
         "symbolAliases": [],
@@ -144,9 +144,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 382,
+        "id": 378,
         "linearizedBaseContracts": [
-          382
+          378
         ],
         "name": "TejTaraTokenSale",
         "nodeType": "ContractDefinition",
@@ -156,7 +156,7 @@
             "id": 247,
             "name": "admin",
             "nodeType": "VariableDeclaration",
-            "scope": 382,
+            "scope": 378,
             "src": "92:21:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -183,7 +183,7 @@
             "id": 249,
             "name": "tokenContract",
             "nodeType": "VariableDeclaration",
-            "scope": 382,
+            "scope": 378,
             "src": "119:33:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -211,7 +211,7 @@
             "id": 251,
             "name": "tokenPrice",
             "nodeType": "VariableDeclaration",
-            "scope": 382,
+            "scope": 378,
             "src": "158:25:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -237,7 +237,7 @@
             "id": 253,
             "name": "tokenSold",
             "nodeType": "VariableDeclaration",
-            "scope": 382,
+            "scope": 378,
             "src": "189:24:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -365,7 +365,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 397,
+                        "referencedDeclaration": 393,
                         "src": "347:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -564,7 +564,7 @@
               "parameters": [],
               "src": "331:0:2"
             },
-            "scope": 382,
+            "scope": 378,
             "src": "268:163:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -815,10 +815,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "519:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -944,7 +944,7 @@
               ],
               "src": "497:11:2"
             },
-            "scope": 382,
+            "scope": 378,
             "src": "437:119:2",
             "stateMutability": "pure",
             "superFunction": null,
@@ -979,7 +979,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 397,
+                            "referencedDeclaration": 393,
                             "src": "639:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1086,10 +1086,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "631:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1141,10 +1141,10 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 415,
+                                  "referencedDeclaration": 411,
                                   "src": "737:4:2",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_TejTaraTokenSale_$382",
+                                    "typeIdentifier": "t_contract$_TejTaraTokenSale_$378",
                                     "typeString": "contract TejTaraTokenSale"
                                   }
                                 }
@@ -1152,7 +1152,7 @@
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_TejTaraTokenSale_$382",
+                                    "typeIdentifier": "t_contract$_TejTaraTokenSale_$378",
                                     "typeString": "contract TejTaraTokenSale"
                                   }
                                 ],
@@ -1265,10 +1265,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "697:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1308,7 +1308,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 397,
+                              "referencedDeclaration": 393,
                               "src": "800:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -1407,10 +1407,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "769:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1493,7 +1493,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 397,
+                          "referencedDeclaration": 393,
                           "src": "884:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1616,7 +1616,7 @@
               "parameters": [],
               "src": "622:0:2"
             },
-            "scope": 382,
+            "scope": 378,
             "src": "565:353:2",
             "stateMutability": "payable",
             "superFunction": null,
@@ -1624,9 +1624,9 @@
           },
           {
             "body": {
-              "id": 380,
+              "id": 376,
               "nodeType": "Block",
-              "src": "951:160:2",
+              "src": "951:180:2",
               "statements": [
                 {
                   "expression": {
@@ -1651,7 +1651,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 397,
+                            "referencedDeclaration": 393,
                             "src": "969:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1705,10 +1705,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "961:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1765,10 +1765,10 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 415,
+                                    "referencedDeclaration": 411,
                                     "src": "1066:4:2",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_TejTaraTokenSale_$382",
+                                      "typeIdentifier": "t_contract$_TejTaraTokenSale_$378",
                                       "typeString": "contract TejTaraTokenSale"
                                     }
                                   }
@@ -1776,7 +1776,7 @@
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_TejTaraTokenSale_$382",
+                                      "typeIdentifier": "t_contract$_TejTaraTokenSale_$378",
                                       "typeString": "contract TejTaraTokenSale"
                                     }
                                   ],
@@ -1921,10 +1921,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "997:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -1948,65 +1948,11 @@
                   "id": 375,
                   "nodeType": "ExpressionStatement",
                   "src": "997:77:2"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "id": 377,
-                        "name": "admin",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 247,
-                        "src": "1098:5:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address_payable",
-                          "typeString": "address payable"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_address_payable",
-                          "typeString": "address payable"
-                        }
-                      ],
-                      "id": 376,
-                      "name": "selfdestruct",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 405,
-                      "src": "1085:12:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
-                        "typeString": "function (address payable)"
-                      }
-                    },
-                    "id": 378,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "1085:19:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 379,
-                  "nodeType": "ExpressionStatement",
-                  "src": "1085:19:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 381,
+            "id": 377,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -2024,27 +1970,27 @@
               "parameters": [],
               "src": "951:0:2"
             },
-            "scope": 382,
-            "src": "924:187:2",
+            "scope": 378,
+            "src": "924:207:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 383,
-        "src": "54:1061:2"
+        "scope": 379,
+        "src": "54:1081:2"
       }
     ],
-    "src": "0:1116:2"
+    "src": "0:1136:2"
   },
   "legacyAST": {
     "absolutePath": "/home/maneesh/Desktop/TejTara_Token/contracts/TejTaraTokenSale.sol",
     "exportedSymbols": {
       "TejTaraTokenSale": [
-        382
+        378
       ]
     },
-    "id": 383,
+    "id": 379,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -2063,7 +2009,7 @@
         "file": "./TejTaraToken.sol",
         "id": 245,
         "nodeType": "ImportDirective",
-        "scope": 383,
+        "scope": 379,
         "sourceUnit": 243,
         "src": "25:28:2",
         "symbolAliases": [],
@@ -2075,9 +2021,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 382,
+        "id": 378,
         "linearizedBaseContracts": [
-          382
+          378
         ],
         "name": "TejTaraTokenSale",
         "nodeType": "ContractDefinition",
@@ -2087,7 +2033,7 @@
             "id": 247,
             "name": "admin",
             "nodeType": "VariableDeclaration",
-            "scope": 382,
+            "scope": 378,
             "src": "92:21:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2114,7 +2060,7 @@
             "id": 249,
             "name": "tokenContract",
             "nodeType": "VariableDeclaration",
-            "scope": 382,
+            "scope": 378,
             "src": "119:33:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2142,7 +2088,7 @@
             "id": 251,
             "name": "tokenPrice",
             "nodeType": "VariableDeclaration",
-            "scope": 382,
+            "scope": 378,
             "src": "158:25:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2168,7 +2114,7 @@
             "id": 253,
             "name": "tokenSold",
             "nodeType": "VariableDeclaration",
-            "scope": 382,
+            "scope": 378,
             "src": "189:24:2",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2296,7 +2242,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 397,
+                        "referencedDeclaration": 393,
                         "src": "347:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2495,7 +2441,7 @@
               "parameters": [],
               "src": "331:0:2"
             },
-            "scope": 382,
+            "scope": 378,
             "src": "268:163:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2746,10 +2692,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "519:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2875,7 +2821,7 @@
               ],
               "src": "497:11:2"
             },
-            "scope": 382,
+            "scope": 378,
             "src": "437:119:2",
             "stateMutability": "pure",
             "superFunction": null,
@@ -2910,7 +2856,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 397,
+                            "referencedDeclaration": 393,
                             "src": "639:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -3017,10 +2963,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "631:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3072,10 +3018,10 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 415,
+                                  "referencedDeclaration": 411,
                                   "src": "737:4:2",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_TejTaraTokenSale_$382",
+                                    "typeIdentifier": "t_contract$_TejTaraTokenSale_$378",
                                     "typeString": "contract TejTaraTokenSale"
                                   }
                                 }
@@ -3083,7 +3029,7 @@
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_TejTaraTokenSale_$382",
+                                    "typeIdentifier": "t_contract$_TejTaraTokenSale_$378",
                                     "typeString": "contract TejTaraTokenSale"
                                   }
                                 ],
@@ -3196,10 +3142,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "697:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3239,7 +3185,7 @@
                               "name": "msg",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 397,
+                              "referencedDeclaration": 393,
                               "src": "800:3:2",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_magic_message",
@@ -3338,10 +3284,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "769:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3424,7 +3370,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 397,
+                          "referencedDeclaration": 393,
                           "src": "884:3:2",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -3547,7 +3493,7 @@
               "parameters": [],
               "src": "622:0:2"
             },
-            "scope": 382,
+            "scope": 378,
             "src": "565:353:2",
             "stateMutability": "payable",
             "superFunction": null,
@@ -3555,9 +3501,9 @@
           },
           {
             "body": {
-              "id": 380,
+              "id": 376,
               "nodeType": "Block",
-              "src": "951:160:2",
+              "src": "951:180:2",
               "statements": [
                 {
                   "expression": {
@@ -3582,7 +3528,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 397,
+                            "referencedDeclaration": 393,
                             "src": "969:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -3636,10 +3582,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "961:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3696,10 +3642,10 @@
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 415,
+                                    "referencedDeclaration": 411,
                                     "src": "1066:4:2",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_TejTaraTokenSale_$382",
+                                      "typeIdentifier": "t_contract$_TejTaraTokenSale_$378",
                                       "typeString": "contract TejTaraTokenSale"
                                     }
                                   }
@@ -3707,7 +3653,7 @@
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_TejTaraTokenSale_$382",
+                                      "typeIdentifier": "t_contract$_TejTaraTokenSale_$378",
                                       "typeString": "contract TejTaraTokenSale"
                                     }
                                   ],
@@ -3852,10 +3798,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        400,
-                        401
+                        396,
+                        397
                       ],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 396,
                       "src": "997:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -3879,65 +3825,11 @@
                   "id": 375,
                   "nodeType": "ExpressionStatement",
                   "src": "997:77:2"
-                },
-                {
-                  "expression": {
-                    "argumentTypes": null,
-                    "arguments": [
-                      {
-                        "argumentTypes": null,
-                        "id": 377,
-                        "name": "admin",
-                        "nodeType": "Identifier",
-                        "overloadedDeclarations": [],
-                        "referencedDeclaration": 247,
-                        "src": "1098:5:2",
-                        "typeDescriptions": {
-                          "typeIdentifier": "t_address_payable",
-                          "typeString": "address payable"
-                        }
-                      }
-                    ],
-                    "expression": {
-                      "argumentTypes": [
-                        {
-                          "typeIdentifier": "t_address_payable",
-                          "typeString": "address payable"
-                        }
-                      ],
-                      "id": 376,
-                      "name": "selfdestruct",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 405,
-                      "src": "1085:12:2",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
-                        "typeString": "function (address payable)"
-                      }
-                    },
-                    "id": 378,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "kind": "functionCall",
-                    "lValueRequested": false,
-                    "names": [],
-                    "nodeType": "FunctionCall",
-                    "src": "1085:19:2",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_tuple$__$",
-                      "typeString": "tuple()"
-                    }
-                  },
-                  "id": 379,
-                  "nodeType": "ExpressionStatement",
-                  "src": "1085:19:2"
                 }
               ]
             },
             "documentation": null,
-            "id": 381,
+            "id": 377,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -3955,18 +3847,18 @@
               "parameters": [],
               "src": "951:0:2"
             },
-            "scope": 382,
-            "src": "924:187:2",
+            "scope": 378,
+            "src": "924:207:2",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 383,
-        "src": "54:1061:2"
+        "scope": 379,
+        "src": "54:1081:2"
       }
     ],
-    "src": "0:1116:2"
+    "src": "0:1136:2"
   },
   "compiler": {
     "name": "solc",
@@ -3976,12 +3868,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xFf0a4E3A93f489331Cb3e8cF511fa5147f255dE5",
-      "transactionHash": "0x3a0a2647cffee1cf9d27a7388e2cbd4cd5dad4e2a1131bf3f2e424f58eb858ab"
+      "address": "0xC6e9C6C986154F8d6b264541b646c0ca842C6f27",
+      "transactionHash": "0x5d3710520ef29a9495232a1012ec39b733caf4a837afb1c8d6e2a37f0d261d2f"
     }
   },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-08-10T13:37:28.352Z",
+  "updatedAt": "2019-08-11T16:44:26.737Z",
   "devdoc": {
     "methods": {}
   },

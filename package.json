@@ -1,0 +1,24 @@
+{
+  "name": "TejTara_Token",
+  "version": "1.0.0",
+  "description": "TejTara Token ICO",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aditya1305249/TejTaraToken.git"
+  },
+  "keywords": [],
+  "author": "Aditya Mohan Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aditya1305249/TejTaraToken/issues"
+  },
+  "homepage": "https://github.com/Aditya1305249/TejTaraToken#readme"
+}
