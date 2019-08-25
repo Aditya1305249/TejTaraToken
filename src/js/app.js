@@ -30,7 +30,8 @@ App ={
             App.contracts.TejTaraTokenSale.deployed().then((tejTaraTokenSale)=>{
                 console.log("Token sale address:", tejTaraTokenSale.address);
             });
-            return App.render();
+            //App.listingForEvents();
+            //return App.render();
         }).done(()=>{
             $.getJSON("TejTaraToken.json",(tejTaraToken)=>{
                 App.contracts.TejTaraToken = TruffleContract(tejTaraToken);
@@ -39,11 +40,23 @@ App ={
                     console.log("Token address:", tejTaraToken.address);
                 });
         })
+        App.listingForEvents();
         return App.render();
         })
        
     },
-
+//listing for contract emmited from contract
+   listingForEvents:()=>{
+    App.contracts.TejTaraTokenSale.deployed().then(instance=>{
+           instance.Sell({},{
+               fromBlock:0,
+               toBlock:'latest'
+           }).watch((err,event)=>{
+               console.log("event triggered",event);
+               App.render();
+           })
+       })
+   }, 
   render: () =>{
       if(App.loading){
           return;
@@ -60,7 +73,8 @@ App ={
           App.account = account;
          $("#accountAddress").html("your account: "+ account); 
       })
-        // console.log(App.contracts.TejTaraToken);
+      //console.log(App.contracts);
+        //console.log(App.contracts.TejTaraToken);
       // console.log("tokenPrice:"+ App.tokenPrice);
 
       //load token sale contract
@@ -92,15 +106,38 @@ App ={
            $(".tejtara-balance").html(balance.toNumber());
        
            App.loading= false;
-           loader.hide();
-           content.show(); 
-       
+      loader.hide();
+      content.show(); 
+  
        
         })
 
       })
+     
    
-  }  
+  },
+
+  buyTokens:()=>{
+
+    $("#content").hide();
+    $("#loader").show();
+
+    const numberOfTokens = $('#numberOfTokens').val();
+
+    App.contracts.TejTaraTokenSale.deployed().then(instance=>{
+        return instance.buyTokens(numberOfTokens,{
+            from:App.account,
+            value: numberOfTokens * App.tokenPrice,
+            gas:500000
+        });
+    }).then(receipt=>{
+        console.log('Token bought');
+        $('form').trigger('reset');
+       //wait for sell event
+    })
+
+  },
+ 
   
 }
 
